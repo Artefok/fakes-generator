@@ -1,1 +1,1 @@
-# fakes-generator
+# Get your own!
