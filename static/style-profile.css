@@ -1,0 +1,85 @@
+body{
+    background: linear-gradient(90deg, #edededb0, aquamarine, #edededb0);
+}
+.user{
+    background: linear-gradient(90deg, aquamarine, lightblue, aquamarine);
+    text-align:center;
+    width: 300px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    background: linear-gradient(30deg,aquamarine, lightblue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+}
+a{
+    font-size: 12pt;
+    color: black;
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover{
+    color: darkred;
+    transition: 0.3s;
+}
+li{
+    margin-top: 7px;
+}
+.stats{
+    border: 1px solid black;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+    display: block;
+    align-items: center;
+    background: radial-gradient(lightblue, rgb(148, 204, 223));
+}
+h2{
+    font-size: 12pt;
+    color: black;
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: left;
+}
+.center-nav a{
+    font-size: 14pt;
+    color: black;
+    text-decoration:overline;
+    margin-right: 30px;
+    margin-left: 50px;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+.center-nav a:hover{
+    color: darkred;
+    transition: 0.3s;
+}
+.profile-a{
+    font-size: 14pt;
+    color: black;
+    text-decoration:overline;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+.edits{
+    border: 1px solid black;
+    padding: 20px;
+    background: radial-gradient(lightblue, rgb(148, 204, 223));
+}

@@ -1,0 +1,35 @@
+body{
+    background: linear-gradient(90deg, #edededb0, rgba(155, 82, 82, 0.54), #edededb0);
+}
+hr{
+    width: 150px;
+    height: 1px;
+    background: white;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+.first-card{
+    width: 200px;
+    border: 1px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    background: linear-gradient(white, white, rgb(14, 208, 225), rgb(14, 208, 225));
+}
+.second-card{
+    width: 200px;
+    border: 1px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    background: linear-gradient(white, white, rgba(181, 31, 31, 0.907), rgba(181, 31, 31, 0.907));
+}
+#attack{
+    margin-top: 10px;
+    width: 160px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 30px;
+}

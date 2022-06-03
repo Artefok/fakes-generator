@@ -1,0 +1,51 @@
+{% extends "if_battle.html" %}
+
+{% block header %} {% include "parts/header.njk" %} {% endblock %}
+
+{% block first_card %}
+
+<section class="first card">
+    <div class="first-card">
+        <div class = "cap">
+            <img src="/images/anon.png" alt="" height="128px">
+            <h1>{{ data.user1.name }}</h1>
+            <p>{{ data.user1.level }} уровень | {{ data.user1.rank }}</p>
+        </div>
+        <hr>
+        <div class="stats">
+            <h3>HP: <span id="hp">{{ data.user1.hp }}</span> ♥</h3>
+            <h3>Урон: {{ data.user1.attack }} ⚔</h3>
+            <h3>Защита: {{ data.user1.defense }} 🛡</h3>
+            <h3>Маг.урон: {{ data.user1.mag-attack }} 🔮</h3>
+            <h3>Шанс уворота: {{ data.user1.dodge }}% 🧶</h3>
+        </div>
+    </div>
+    <button id = "attack">Атака</button>  
+    <div class="hands">
+        <button id = "magic"><img src="./images/magic.png" alt=""></button>  
+        <button id = "create"><img src="./images/create.png" alt=""></button>  
+        <button id = "destroy"><img src="./images/destroy.png" alt=""></button>  
+    </div>
+</section>
+{% endblock %}
+
+{% block second_card %}
+
+<section class="second card">
+    <div class="second-card">
+        <img src="/images/anon.png" alt="" height="128px">
+        <div class = "cap1">
+            <h1><span id = "name1">{{ data.user2.name }}</span></h1>
+            <p><span id = "level1">{{ data.user2.level }}</span> уровень | <span id = "rank1">{{ data.user2.rank }}</span></p>
+        </div>
+        <hr>
+        <div class="stats">
+            <h3>HP: <span id="hp1">{{ data.user2.hp }}</span> ♥</h3>
+            <h3>Урон: <span id = "attack1">{{ data.user2.attack }}</span> ⚔</h3>
+            <h3>Защита: <span id = "defense1">{{ data.user2.defense }}</span> 🛡</h3>
+            <h3>Маг.урон: <span id = "mag-attack1">{{ data.user2.mag-attack }}</span> 🔮</h3>
+            <h3>Шанс уворота: <span id = "dodge1">{{ data.user2.dodge }}</span>% 🧶</h3>
+        </div>
+    </div>
+</section> 
+{% endblock %}

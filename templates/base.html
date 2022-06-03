@@ -1,0 +1,27 @@
+{% extends "main.html" %}
+
+{% block header %} {% include "parts/header.njk" %} {% endblock %}
+
+{% block main %}
+
+<section class="items">
+        {% for key, item in data1 %}
+            {% if item != undefined%}
+                <div class="item">
+                    <h1>{{ item.name }}</h1>
+                    <p>{{ item.description }}</p>
+                    <ul>
+                        <li>+{{ item.hp }} hp</li>
+                        <li>+{{ item.attack }} attack</li>
+                        <li>+{{ item.defense }} armor</li>
+                        <li>+{{ item.mag-attack }} magic attack</li>
+                        <li>+{{ item.dodge }}% dodge</li>
+                    </ul>
+                    <button>Купить</button>
+                </div>
+            {% else %}
+            
+            {% endif %}
+        {% endfor %}    
+</section>
+{% endblock %}

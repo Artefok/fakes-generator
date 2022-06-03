@@ -1,0 +1,22 @@
+{% extends "rooms.html" %}
+
+{% block header1 %} {% include "parts/header.njk" %} {% endblock %}
+
+{% block main1 %}
+<table class="rooms">
+    <tr>
+        <td>ID</td>
+        <td>Уровень</td>
+        <td>Владелец</td>
+        <td></td>
+    </tr>
+    {% for key, room in data1 %}
+    <tr class = '{{ room.id_room }}'>
+        <td id = "room_id">{{ room.id_room }}</td>
+        <td>{{ room.level }}</td>
+        <td>{{ room.first }}</td>
+        <td><button class = "connect">Присоединиться</button></td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
